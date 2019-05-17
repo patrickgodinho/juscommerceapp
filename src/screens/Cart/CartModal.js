@@ -5,6 +5,7 @@ import { Appbar } from 'react-native-paper';
 
 import CartModalItem from '../../components/CartModalItem';
 import Button from '../../components/Button';
+import Empty from '../../components/Empty';
 import NavigationService from '../../NavigationService';
 
 const AppbarHeader = styled(Appbar.Header)`
@@ -65,13 +66,15 @@ const CartModal = ({ cart }) => {
             );
           })
         ) : (
-          <Text>Carrinho vazio</Text>
+          <Empty>Carrinho vazio</Empty>
         )}
         <Footer>
-          <Button
-            label='Concluir compra'
-            onPress={() => onPress(cart.setVisible)}
-          />
+          {cart.list.length > 0 && (
+            <Button
+              label='Concluir compra'
+              onPress={() => onPress(cart.setVisible)}
+            />
+          )}
         </Footer>
       </Content>
     </Modal>

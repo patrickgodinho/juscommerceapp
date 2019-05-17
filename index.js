@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { AppRegistry } from 'react-native';
 import App from './src/App';
 import { name as appName } from './app.json';
@@ -12,10 +12,8 @@ const Main = () => {
   return (
     <PaperProvider>
       <CartProvider>
-        <Fragment>
-          <App />
-          <EnhancedCartModal />
-        </Fragment>
+        <App />
+        <EnhancedCartModal />
       </CartProvider>
     </PaperProvider>
   );

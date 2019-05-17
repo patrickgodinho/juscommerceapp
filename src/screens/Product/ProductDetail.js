@@ -7,6 +7,7 @@ import Container from '../../components/Container';
 import ItemDetail from '../../components/ItemDetail';
 
 import { withCart } from '../../contexts/Cart';
+import Loading from '../../components/Loading';
 
 const query = graphql`
   query ProductDetailQuery($id: ID!) {
@@ -21,7 +22,7 @@ const query = graphql`
 `;
 
 const ProductDetailRendered = ({ error, props, cart }) => {
-  if (!props) return <Text>Loading</Text>;
+  if (!props) return <Loading>Loading</Loading>;
 
   return (
     <Container white>

@@ -5,6 +5,7 @@ import { View, Text, FlatList } from 'react-native';
 import environment from '../../environment';
 import Product from './Product';
 import Container from '../../components/Container';
+import Loading from '../../components/Loading';
 
 const query = graphql`
   query ProductListQuery {
@@ -16,7 +17,7 @@ const query = graphql`
 `;
 
 const ProductListRendered = ({ error, props }) => {
-  if (!props) return <Text>Loading</Text>;
+  if (!props) return <Loading>Loading</Loading>;
   return (
     <Container>
       <FlatList

@@ -54,10 +54,16 @@ export const Cart = ({ children }) => {
     setQuantity(newQuantity);
   };
 
+  clear = () => {
+    setList([]);
+    setQuantity(0);
+  };
+
   return (
     <Provider
       value={{
         list,
+        clear,
         add,
         remove,
         change,

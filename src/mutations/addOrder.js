@@ -1,7 +1,7 @@
-import { Alert } from 'react-native';
 import { commitMutation, graphql } from 'react-relay';
 import environment from '../environment';
 import NavigationService from '../NavigationService';
+import Alert from '../components/Alert';
 
 const mutation = graphql`
   mutation addOrderMutation($input: OrderInput!) {
@@ -11,7 +11,7 @@ const mutation = graphql`
   }
 `;
 
-export const addOrder = ({ items, card }) => {
+export const addOrder = ({ items, card, clear }) => {
   const variables = {
     input: {
       items,
@@ -24,20 +24,14 @@ export const addOrder = ({ items, card }) => {
     variables,
     onCompleted: (response, errors) => {
       if (response.addOrder.result === 'FALHA') {
-        Alert.alert(
-          'Cartão inválido',
-          'Troque o cartão',
-          [
-            {
-              text: 'ok'
-            }
-          ],
-          { cancelable: true }
-        );
+        Alert({ message: 'Selecione outro cartão', title: 'Cartão inválido' });
       } else {
+        Alert({ message: 'Pedido adicionado com sucesso', title: 'Sucesso!' });
         NavigationService.reset();
+        clear();
       }
     },
-    onError: err => console.error(err)
+    onError: err =>
+      Alert({ message: 'Erro ao salvar o pedido', title: 'Sucesso!' })
   });
 };

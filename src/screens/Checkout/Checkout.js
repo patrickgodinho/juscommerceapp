@@ -53,7 +53,13 @@ const Checkout = ({ cart }) => {
         </ButtonCard>
       </RadioButton.Group>
       <Button
-        onPress={() => addOrder({ items: cart.list, card: checked })}
+        onPress={() =>
+          addOrder({
+            items: cart.list,
+            card: checked,
+            clear: () => cart.clear()
+          })
+        }
         label='Finalizar'
       />
     </Container>
