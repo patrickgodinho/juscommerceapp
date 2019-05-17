@@ -19,7 +19,7 @@
 - [🚧] Unit tests
 - [] Components directory refactor
 
-#### Server:
+#### GraphQL Server:
 
 https://github.com/patrickgodinho/jusgraphql
 
