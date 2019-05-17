@@ -1,5 +1,7 @@
 ## JUSBRASIL Fullstack challenge - Juscommerce
 
+![](jus.gif)
+
 ### Steps to run:
 
 - Clone this repo
