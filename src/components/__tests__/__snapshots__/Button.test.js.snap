@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "center",
+      "backgroundColor": "#ff685f",
+      "borderColor": "transparent",
+      "borderRadius": 5,
+      "borderStyle": "solid",
+      "borderWidth": 0,
+      "elevation": 0,
+      "height": 45,
+      "justifyContent": "center",
+      "minWidth": 64,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowOpacity": 0.24,
+      "shadowRadius": 0,
+      "width": 250,
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "borderRadius": 4,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontFamily": "Helvetica Neue",
+              "textAlign": "left",
+              "writingDirection": "ltr",
+            },
+            Array [
+              Object {
+                "letterSpacing": 1,
+                "marginHorizontal": 16,
+                "marginVertical": 9,
+                "textAlign": "center",
+              },
+              undefined,
+              Object {
+                "color": "#6200ee",
+                "fontFamily": "HelveticaNeue-Medium",
+              },
+              Object {
+                "fontFamily": "HelveticaNeue-Medium",
+              },
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 16,
+                "fontWeight": "300",
+                "width": "100%",
+              },
+            ]
+          }
+        />
+      </Text>
+    </View>
+  </View>
+</View>
+`;

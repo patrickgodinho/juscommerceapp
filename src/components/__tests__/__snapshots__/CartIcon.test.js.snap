@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test empty cart icon 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 25,
+      "opacity": 1,
+      "right": 16,
+      "width": 25,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#FFF",
+          "fontSize": 25,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    numberOfLines={1}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "backgroundColor": "black",
+        "borderRadius": 9,
+        "color": "#ffffff",
+        "fontFamily": "Helvetica Neue",
+        "fontSize": 9,
+        "height": 18,
+        "lineHeight": 18,
+        "minWidth": 18,
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 4,
+        "position": "absolute",
+        "right": -10,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+        "top": -10,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`test one item cart 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 25,
+      "opacity": 1,
+      "right": 16,
+      "width": 25,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#FFF",
+          "fontSize": 25,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+  <Text
+    numberOfLines={1}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "backgroundColor": "black",
+        "borderRadius": 9,
+        "color": "#ffffff",
+        "fontFamily": "Helvetica Neue",
+        "fontSize": 9,
+        "height": 18,
+        "lineHeight": 18,
+        "minWidth": 18,
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 4,
+        "position": "absolute",
+        "right": -10,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+        "top": -10,
+      }
+    }
+  />
+</View>
+`;

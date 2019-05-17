@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test list item 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 4,
+        "elevation": 1,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 0.75,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+    >
+      <View
+        index={0}
+        siblings={
+          Array [
+            "Styled(View)",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+          ]
+        }
+        total={1}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "flex-start",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "borderRadius": 5,
+                  "height": 100,
+                  "width": 120,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "flexBasis": 0,
+                "flexDirection": "column",
+                "flexGrow": 2,
+                "flexShrink": 1,
+                "paddingTop": 6,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "column",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#202020",
+                    "flexBasis": 0,
+                    "flexGrow": 4,
+                    "flexShrink": 1,
+                    "fontSize": 18,
+                    "paddingLeft": 12,
+                  },
+                ]
+              }
+            >
+              test product1
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#444444",
+                    "flexBasis": 0,
+                    "flexGrow": 4,
+                    "flexShrink": 1,
+                    "fontSize": 12,
+                    "paddingLeft": 12,
+                  },
+                ]
+              }
+            >
+              test description 1
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "space-between",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ff685f",
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "fontSize": 20,
+                    "fontWeight": "500",
+                    "paddingBottom": 12,
+                    "paddingLeft": 12,
+                  },
+                ]
+              }
+            >
+              R$ 123
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
