@@ -27,16 +27,26 @@
     "babel-plugin-relay": "^4.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.0",
+    "enzyme-to-json": "^3.3.5",
     "graphql": "^14.3.0",
     "jest": "^24.8.0",
+    "jest-react-native": "^18.0.0",
+    "jest-styled-components": "^6.3.1",
     "metro-react-native-babel-preset": "^0.54.1",
     "react-test-renderer": "^16.8.6",
-    "relay-compiler": "^4.0.0"
+    "relay-compiler": "^4.0.0",
+    "xhr2": "^0.1.4"
   },
   "jest": {
     "preset": "react-native",
     "setupFilesAfterEnv": [
-      "<rootDir>/src/setup-tests.js"
-    ]
+      "<rootDir>/src/config/setup-tests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "styled-components": "<rootDir>/node_modules/styled-components/native/dist/styled-components.native.cjs.js"
+    }
   }
 }

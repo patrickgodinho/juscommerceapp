@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash 71138e415394d04740e5ac3fae1e8d0d
+ * @relayHash 40af6940040a01299581112751ec6dec
  */
 
 /* eslint-disable */
@@ -9,12 +9,12 @@
 
 /*::
 import type { ConcreteRequest } from 'relay-runtime';
-type Product_product$ref = any;
+type ProductItem_product$ref = any;
 export type ProductListQueryVariables = {||};
 export type ProductListQueryResponse = {|
   +products: ?$ReadOnlyArray<?{|
     +id: ?string,
-    +$fragmentRefs: Product_product$ref,
+    +$fragmentRefs: ProductItem_product$ref,
   |}>
 |};
 export type ProductListQuery = {|
@@ -28,11 +28,11 @@ export type ProductListQuery = {|
 query ProductListQuery {
   products {
     id
-    ...Product_product
+    ...ProductItem_product
   }
 }
 
-fragment Product_product on ProductType {
+fragment ProductItem_product on ProductType {
   id
   name
   image
@@ -70,7 +70,7 @@ return {
           (v0/*: any*/),
           {
             "kind": "FragmentSpread",
-            "name": "Product_product",
+            "name": "ProductItem_product",
             "args": null
           }
         ]
@@ -128,11 +128,11 @@ return {
     "operationKind": "query",
     "name": "ProductListQuery",
     "id": null,
-    "text": "query ProductListQuery {\n  products {\n    id\n    ...Product_product\n  }\n}\n\nfragment Product_product on ProductType {\n  id\n  name\n  image\n  price\n  description\n}\n",
+    "text": "query ProductListQuery {\n  products {\n    id\n    ...ProductItem_product\n  }\n}\n\nfragment ProductItem_product on ProductType {\n  id\n  name\n  image\n  price\n  description\n}\n",
     "metadata": {}
   }
 };
 })();
 // prettier-ignore
-(node/*: any*/).hash = 'a001a682de406376b7285ea4c51aeef5';
+(node/*: any*/).hash = '19cdbb39a63a4b2f69b6cc6f226eb57a';
 module.exports = node;

@@ -3,7 +3,7 @@ import { QueryRenderer, graphql } from 'react-relay';
 import { View, Text, FlatList } from 'react-native';
 
 import environment from '../../environment';
-import Product from './Product';
+import Product from './ProductItem';
 import Container from '../../components/Container';
 import Loading from '../../components/Loading';
 
@@ -11,12 +11,12 @@ const query = graphql`
   query ProductListQuery {
     products {
       id
-      ...Product_product
+      ...ProductItem_product
     }
   }
 `;
 
-const ProductListRendered = ({ error, props }) => {
+export const ProductListRendered = ({ error, props }) => {
   if (!props) return <Loading>Loading</Loading>;
   return (
     <Container>

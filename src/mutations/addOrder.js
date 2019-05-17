@@ -1,6 +1,6 @@
 import { commitMutation, graphql } from 'react-relay';
 import environment from '../environment';
-import NavigationService from '../NavigationService';
+import NavigationService from '../navigator/NavigationService';
 import Alert from '../components/Alert';
 
 const mutation = graphql`

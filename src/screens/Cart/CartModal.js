@@ -6,7 +6,7 @@ import { Appbar } from 'react-native-paper';
 import CartModalItem from '../../components/CartModalItem';
 import Button from '../../components/Button';
 import Empty from '../../components/Empty';
-import NavigationService from '../../NavigationService';
+import NavigationService from '../../navigator/NavigationService';
 
 const AppbarHeader = styled(Appbar.Header)`
   background-color: #ff685f;
@@ -66,7 +66,7 @@ const CartModal = ({ cart }) => {
             );
           })
         ) : (
-          <Empty>Carrinho vazio</Empty>
+          <Empty />
         )}
         <Footer>
           {cart.list.length > 0 && (

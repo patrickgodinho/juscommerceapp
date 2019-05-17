@@ -1,7 +1,7 @@
 import React from 'react';
 
-import NavigationService from './NavigationService';
-import AppContainer from './Navigator';
+import NavigationService from './navigator/NavigationService';
+import AppContainer from './navigator/Navigator';
 
 export default class App extends React.Component {
   render() {
