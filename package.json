@@ -1,0 +1,42 @@
+{
+  "name": "juscommerceapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "schema:j": "get-graphql-schema http://localhost:4001/graphql -j  > data/schema.json",
+    "schema:g": "get-graphql-schema http://localhost:4001/graphql > data/schema.graphql",
+    "relay": "yarn schema:j && yarn schema:g && relay-compiler --src ./src/ --schema ./data/schema.graphql"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-native": "0.59.8",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-paper": "^2.15.2",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.9.2",
+    "react-relay": "^4.0.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-relay": "^4.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
+    "graphql": "^14.3.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "^16.8.6",
+    "relay-compiler": "^4.0.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setup-tests.js"
+    ]
+  }
+}

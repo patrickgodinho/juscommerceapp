@@ -1,0 +1,49 @@
+schema {
+  query: RootQueryType
+  mutation: Mutations
+}
+
+type Mutations {
+  """Add Order"""
+  addOrder(order: OrderInput!): OrderType
+}
+
+input OrderInput {
+  items: [OrderItemInputType]
+  card: Float
+}
+
+input OrderItemInputType {
+  product: ProductInputType
+  amount: Float
+}
+
+type OrderType {
+  result: String
+}
+
+input ProductInputType {
+  id: ID
+  name: String
+  color: String
+  image: String
+  price: Float
+  amount: Float
+  description: String
+}
+
+type ProductType {
+  id: ID
+  name: String
+  color: String
+  image: String
+  price: Float
+  amount: Float
+  description: String
+}
+
+type RootQueryType {
+  products: [ProductType]
+  product(id: ID!): ProductType
+}
+
