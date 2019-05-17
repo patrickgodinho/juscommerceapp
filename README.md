@@ -22,4 +22,5 @@
 #### Server:
 
 https://github.com/patrickgodinho/jusgraphql
+
 https://juscommerceapi.herokuapp.com/graphql
