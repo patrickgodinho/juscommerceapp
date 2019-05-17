@@ -19,6 +19,7 @@
 - [✅] Cart requirement
 - [✅] Checkout requirement
 - [🚧] Unit tests
+- [] Client schema extensions
 - [] Components directory refactor
 
 #### GraphQL Server:
